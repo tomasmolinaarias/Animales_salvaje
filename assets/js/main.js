@@ -89,18 +89,18 @@ botonagregar.addEventListener('click', async (e) => {
     }
     //----------------------------------------------------------------
     animaless.push(nuevoanimales)
-    console.log(animaless)
+    // console.log(animaless)
     // //------------------------------------------------------------------------------------------------
     const mostarAnimales = () => {
-        animalesTabla.innerHTML = "";
+        animalesTabla.textContent = "";
         animaless.forEach((animal) => {
             animalesTabla.innerHTML += `
-                <div class="card ms-2 col-md-3 mb-3">
-                    ${animal.img}
-                    <div class="card-body">
-                        <button id="btnAudio" class="btn btn-outline-danger">SONIDO</button>
-                    </div>  
-                </div>`;
+                    <div class="card ms-2 col-md-3 mb-3">
+                        ${animal.img}
+                        <div class="card-body">
+                            <button id="btnAudio" class="btn btn-outline-danger">SONIDO</button>
+                        </div>  
+                    </div>`;
         });
     };
 
