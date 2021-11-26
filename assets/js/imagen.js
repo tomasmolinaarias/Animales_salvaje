@@ -3,8 +3,6 @@ import getDatos from "./consulta.js";
 
 const seleccionAnimal = document.getElementById('animal')
 const preview = document.getElementById('preview')
-const botonagregar = document.getElementById('btnRegistrar')
-
 
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-++-+-+-+-+
 seleccionAnimal.addEventListener('change', async () => {
