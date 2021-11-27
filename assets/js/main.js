@@ -113,5 +113,5 @@ botonagregar.addEventListener('click', async (e) => {
     mostarAnimales()
 });
 //arregle el fondo y que la carta se vea  mas decente 
-//trate de hacer las opciones pero me enereder 
+//trate de hacer las opciones pero me enrede
 //estoy tratando de hacerlo con un mini projecto de prueba.
