@@ -42,7 +42,9 @@ botonagregar.addEventListener('click', async (e) => {
         return `src='.assets/sounds/${animal.sonido}'`
     })();
     // console.log(sonidoAnimal)
-
+    //---AGREGANDO  id   let nuevoanimales;
+    let nuevoid = `id-${Date.now()}`
+    const idanimal = nuevoid;
     //-------- AGREGAR DATOS  Y IF PARA DIFERENCIAR ANIMALES ------
     let nuevoanimales;
 
@@ -52,7 +54,8 @@ botonagregar.addEventListener('click', async (e) => {
             seleccionAnimalEdad.value,
             imagen,
             comentarioAnimal.value,
-            sonidoAnimal
+            sonidoAnimal,
+            idanimal
         );
     } else if (seleccionAnimal.value == 'Lobo') {
         nuevoanimales = new Lobo(
@@ -60,7 +63,8 @@ botonagregar.addEventListener('click', async (e) => {
             seleccionAnimalEdad.value,
             imagen,
             comentarioAnimal.value,
-            sonidoAnimal
+            sonidoAnimal,
+            idanimal
         );
     } else if (seleccionAnimal.value == 'Oso') {
         nuevoanimales = new Oso(
@@ -68,7 +72,8 @@ botonagregar.addEventListener('click', async (e) => {
             seleccionAnimalEdad.value,
             imagen,
             comentarioAnimal.value,
-            sonidoAnimal
+            sonidoAnimal,
+            idanimal
         );
     } else if (seleccionAnimal.value == 'Serpiente') {
         nuevoanimales = new Serpiente(
@@ -76,7 +81,8 @@ botonagregar.addEventListener('click', async (e) => {
             seleccionAnimalEdad.value,
             imagen,
             comentarioAnimal.value,
-            sonidoAnimal
+            sonidoAnimal,
+            idanimal
         );
     } else if (seleccionAnimal.value == 'Aguila') {
         nuevoanimales = new Aguila(
@@ -84,12 +90,14 @@ botonagregar.addEventListener('click', async (e) => {
             seleccionAnimalEdad.value,
             imagen,
             comentarioAnimal.value,
-            sonidoAnimal
+            sonidoAnimal,
+            idanimal
         );
     }
     //----------------------------------------------------------------
     animaless.push(nuevoanimales)
-    // console.log(animaless)
+    console.log(animaless)
+    console.log(idanimal)
     // //------------------------------------------------------------------------------------------------
     const mostarAnimales = () => {
         animalesTabla.textContent = "";
@@ -104,3 +112,6 @@ botonagregar.addEventListener('click', async (e) => {
     };
     mostarAnimales()
 });
+//arregle el fondo y que la carta se vea  mas decente 
+//trate de hacer las opciones pero me enereder 
+//estoy tratando de hacerlo con un mini projecto de prueba.
